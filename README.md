@@ -42,7 +42,7 @@ python realTimeLogAudio.py  probemon.log
 Run following in another terminal
 ```
 >probemon.log
-cat mon.log |while read line; do echo $line; sleep 1; echo $line >>probemon.log; done
+cat mon.log |while read line; do sleep 1; echo $line >>probemon.log; done
 ```
 
 Switch back to first terminal to hear audio and data flowing
