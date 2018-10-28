@@ -30,6 +30,13 @@ The new frequency/tone is then converted to stream using `numpy` and fed into `P
 
 The audio tone is popping / cracking free that usually occurs when mixing two audio tones/frequencies mid-stream.
 
+## Running the Program
+
+```
+python realTimeLogAudio.py
+````
+
+
 ## Authors
 
 * **Anil Mandra** - *Initial work* - [SciTechDude](https://github.com/scitechdude)
