@@ -30,11 +30,27 @@ The new frequency/tone is then converted to stream using `numpy` and fed into `P
 
 The audio tone is popping / cracking free that usually occurs when mixing two audio tones/frequencies mid-stream.
 
+A sample log file is provided that has WiFi mac + RSSI data. The program filters RSSI value from last line of code and
+changes frequency accordingly
 ## Running the Program
 
+## Running the test
+
+Run following script in another mac / linux terminal
 ```
-python realTimeLogAudio.py
+python realTimeLogAudio.py  probemon.log
 ````
+Run following in another terminal
+```
+>probemon.log
+cat mon.log |while read line; do echo $line; sleep 1; echo $line >>probemon.log; done
+```
+
+Run following in one  mac / linux terminal
+```
+python realTimeLogAudio.py  probemon.log
+````
+
 
 
 ## Authors

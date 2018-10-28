@@ -12,7 +12,6 @@ RATE = 44100
 FREQ = 100
 NEWFREQ = 100
 PHASE = 0
-LOG_FILE = "probemon.log"
 
 def signal_handler(sig, frame):
     ''' 
@@ -41,6 +40,13 @@ def callback(in_data, frame_count, time_info, status):
 
 
 if __name__=="__main__":
+
+    if len(sys.argv) < 2:
+        print("Generated Audio Tone for variation in given log file .\n\nUsage: %s logfile.log" % sys.argv[0])
+        sys.exit(-1)
+
+    #LOG_FILE = "probemon.log"
+    LOG_FILE = sys.argv[1]
     TT = time()
     #Handle SIGINT
     signal.signal(signal.SIGINT, signal_handler)
