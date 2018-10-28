@@ -19,7 +19,7 @@ Need following external python modules
  
 ## Description
 
-While working with OP at stackoverflow to solve an interesting problem.
+While working with OP at stackoverflow to solve an [interesting problem](https://stackoverflow.com/questions/52604019/real-time-continuous-sounds-with-pydub/53016278#comment92943285_53016278).
 OP needed a solution that will generate continuous pure audio tone that varies with change in log value.
 After much research , trial and error a solution was deviced based on following `pyaudio`
 
