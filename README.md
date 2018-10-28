@@ -32,11 +32,10 @@ The audio tone is popping / cracking free that usually occurs when mixing two au
 
 A sample log file is provided that has WiFi mac + RSSI data. The program filters RSSI value from last line of code and
 changes frequency accordingly
-## Running the Program
 
-## Running the test
+## Running the test / Program
 
-Run following script in another mac / linux terminal
+Run following script in a mac / linux terminal
 ```
 python realTimeLogAudio.py  probemon.log
 ````
@@ -46,12 +45,21 @@ Run following in another terminal
 cat mon.log |while read line; do echo $line; sleep 1; echo $line >>probemon.log; done
 ```
 
-Run following in one  mac / linux terminal
+Switch back to first terminal to hear audio and data flowing
+
 ```
-python realTimeLogAudio.py  probemon.log
-````
-
-
+mac:default , rssi:0.0 , freq:0 Hz
+mac:d8:8f:76:1a:cb:65 , rssi:-43 , freq:430 Hz
+mac:04:4f:4c:77:72:8f , rssi:-51 , freq:510 Hz
+mac:20:39:56:af:51:49 , rssi:-39 , freq:390 Hz
+mac:20:39:56:af:51:49 , rssi:-45 , freq:450 Hz
+mac:5e:e2:1d:a3:d2:da , rssi:-47 , freq:470 Hz
+mac:5e:e2:1d:a3:d2:da , rssi:-49 , freq:490 Hz
+mac:12:84:16:9c:75:ee , rssi:-43 , freq:430 Hz
+mac:da:a1:19:71:4d:0c , rssi:-55 , freq:550 Hz
+mac:d8:8f:76:1a:cb:65 , rssi:-49 , freq:490 Hz
+```
+Note: Above mac addresses are fake and do not relate to my personal / work data.
 
 ## Authors
 
